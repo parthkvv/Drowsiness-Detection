@@ -1,9 +1,3 @@
-# Introduction
-
-According to a report by the National Highway Traffic Safety Administration, about 100,000 road accidents involve driving under drowsiness/intoxicaition. In order to avert the same, a drowsiness detection system has been implemented that alerts the driver if he/she sleeps.
-
-## Working Details: 
-
 The basic principle behind this system works by the detection of face first using dlib's frontal face detector. Once the face is detected , we try to detect the facial landmarks in the face using the dlib's landmark predictor. The landmark predictor returns 68 coordinates(x,y) representing different regions of the face out of which we have to deal only with the eye and the mouth region.
 
 After landmarks are obtianed, <b>Eye Aspect Ratio (EAR)</b> is calculated: 
